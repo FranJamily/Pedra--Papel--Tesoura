@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Estilo geral do corpo da página */
+body {
+    /* Usa Flexbox para centralizar o conteúdo horizontal e verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Define a altura mínima da viewport para 100% da altura da tela */
+    height: 100vh;
+    /* Define a cor de fundo da página */
+    background-color: #f0f0f0;
+    /* Remove a margem padrão do corpo */
+    margin: 0;
+    /* Define a fonte padrão da página */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do container principal do jogo */
+.game {
+    /* Alinha o texto ao centro dentro do container */
+    text-align: center;
+    /* Define a cor de fundo do container */
+    background: #fff;
+    /* Adiciona uma borda cinza clara ao container */
+    border: 1px solid #ccc;
+    /* Adiciona bordas arredondadas ao container */
+    border-radius: 8px;
+    /* Adiciona uma sombra leve ao container para dar um efeito de elevação */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona um preenchimento interno ao container */
+    padding: 20px;
+}
+
+/* Estilo do título principal */
+h1 {
+    /* Define o tamanho da fonte do título */
+    font-size: 2em;
+    /* Adiciona uma margem abaixo do título */
+    margin-bottom: 20px;
+}
+
+/* Estilo do container de escolhas */
+.choices {
+    /* Adiciona uma margem abaixo do container de escolhas */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões de escolha */
+.choice-button {
+    /* Define o tamanho da fonte dos botões */
+    font-size: 1.2em;
+    /* Adiciona uma margem ao redor dos botões */
+    margin: 10px;
+    /* Adiciona um preenchimento interno aos botões */
+    padding: 10px 20px;
+    /* Remove a borda padrão dos botões */
+    border: none;
+    /* Adiciona bordas arredondadas aos botões */
+    border-radius: 5px;
+    /* Define o cursor como uma mãozinha ao passar sobre o botão */
+    cursor: pointer;
+    /* Adiciona uma transição suave para mudanças de fundo e escala */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Estilo para o estado do botão ao passar o mouse sobre ele */
+.choice-button:hover {
+    /* Define a cor de fundo do botão quando o mouse está sobre ele */
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o estado do botão quando ele está sendo clicado */
+.choice-button:active {
+    /* Reduz a escala do botão ligeiramente para criar um efeito de clique */
+    transform: scale(0.95);
+}
+
+/* Estilo dos parágrafos dentro do container de resultados */
+.result p {
+    /* Define o tamanho da fonte dos parágrafos */
+    font-size: 1.2em;
+    /* Adiciona uma margem ao redor dos parágrafos */
+    margin: 10px;
+}

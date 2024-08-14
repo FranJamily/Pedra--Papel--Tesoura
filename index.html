@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres para o documento como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a visualização para dispositivos móveis, garantindo que a página seja dimensionada corretamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <title>Pedra, Papel e Tesoura</title>
+    <!-- Link para o arquivo CSS externo que estiliza a página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Div principal que contém o conteúdo do jogo -->
+    <div class="game">
+        <!-- Cabeçalho do jogo -->
+        <h1>Pedra, Papel e Tesoura</h1>
+        <!-- Div que contém os botões de escolha do usuário -->
+        <div class="choices">
+            <!-- Botão para escolher Pedra; chama a função play() passando 'pedra' como argumento -->
+            <button class="choice-button" onclick="play('pedra')">Pedra</button>
+            <!-- Botão para escolher Papel; chama a função play() passando 'papel' como argumento -->
+            <button class="choice-button" onclick="play('papel')">Papel</button>
+            <!-- Botão para escolher Tesoura; chama a função play() passando 'tesoura' como argumento -->
+            <button class="choice-button" onclick="play('tesoura')">Tesoura</button>
+            <button onclick="resetGame()">Reiniciar Jogo</button>
+
+        </div>
+        <!-- Div que exibe o resultado do jogo -->
+        <div class="result">
+            <!-- Parágrafo para mostrar a mensagem do resultado do jogo -->
+            <p id="resultMessage">Escolha uma opção!</p>
+            <!-- Parágrafo para mostrar a escolha do usuário -->
+            <p id="userChoice"></p>
+            <!-- Parágrafo para mostrar a escolha do computador -->
+            <p id="computerChoice"></p>
+            <p id="score">Pontuação - Você: 0 | Computador: 0</p>
+
+        </div>
+    </div>
+    <!-- Link para o arquivo JavaScript externo que contém a lógica do jogo -->
+    <script src="app.js"></script>
+</body>
+</html>
