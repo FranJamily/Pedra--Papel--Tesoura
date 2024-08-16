@@ -2,7 +2,7 @@
 
 // Variáveis para armazenar o número de jogadas e o resultado
 let numJogadas = 0; // Contador para rastrear o número de jogadas feitas
-const maxJogadas = 3; // Número máximo de jogadas permitido no jogo!!!
+const maxJogadas = 3; // Número máximo de jogadas permitido no jogo!!
 
 // Variáveis para armazenar os pontos do usuário e do computador
 let userPoints = 0; // Contador para os pontos do usuário
